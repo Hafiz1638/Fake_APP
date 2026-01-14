@@ -1,0 +1,3 @@
+-e, --essid       Base SSID string for Fake APs (required)  
+-i, --interface   Monitor-mode interface (e.g., wlan0mon) (required)  
+-s, --sayi       Number of Fake APs to spawn (required, integer)

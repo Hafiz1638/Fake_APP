@@ -1,0 +1,14 @@
+# Installation
+
+## Debian/Ubuntu/Kali
+
+sudo apt update && sudo apt install -y aircrack-ng
+
+Arch/Manjaro
+
+sudo pacman -Syu aircrack-ng
+
+
+Fedora
+
+sudo dnf install aircrack-ng

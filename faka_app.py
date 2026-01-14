@@ -7,7 +7,7 @@ init(autoreset=True)
 r = Fore.RED + Style.BRIGHT
 y = Fore.GREEN
 b = Fore.BLUE
-s = Fore.YELLOW # Siyah terminalde görünmeyebilir, sarı yaptım
+s = Fore.YELLOW 
 def banner():
     try :
         with open("banner.txt","r") as f:
@@ -22,7 +22,7 @@ def parseArgumans():
     
     (options, args) = parser.parse_args()
 
-    # Kontrolü burada yapıyoruz
+
     if not options.essid or not options.interface or not options.sayi:
         print(r + "\nHata: -e (ad), -i (arayuz) ve -s (sayi) parametrelerini girmelisiniz!")
         exit()
@@ -35,7 +35,7 @@ def startFakeapp(essid, interface, sayi):
     
     for num in range(sayi):
         ssid = f"{essid}_{num+1}"
-        # stdout=subprocess.DEVNULL parantezsiz olmalı
+
         p = subprocess.Popen(
             ["airbase-ng", "--essid", ssid, interface],
             stdout=subprocess.DEVNULL,
